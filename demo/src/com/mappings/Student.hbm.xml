@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"https://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name = "com.niit.models.Student" table="student">
+		<id name="uId" type="string>"<column name="uId" length = "40"/>
+		<generator class ="assigned"/></id>
+		
+		<property name="fName" type="string">
+		<column name="fName"length="20"/></property>
+		
+		<property name="lName" type="string">
+		<column name="lName"length="20"/></property>
+		
+		<property name="gender" type="string">
+		<column name="gender"length="20"/></property>
+		
+		<property name="dob" type="date">
+		<column name="dob"length="20"/></property>
+		
+		<property name="address" type="string">
+		<column name="address"length="20"/></property>
+		
+		<property name="email" type="string">
+		<column name="email"length="20"/></property>
+		
+		<property name="mobileNo" type="string">
+		<column name="mobileNo"length="20"/></property>
+		
+		<property name="pwd" type="string">
+		<column name="pwd"length="20"/></property>
+		
+		
+	</class>
+</hibernate-mapping>
